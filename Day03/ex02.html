@@ -1,0 +1,90 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+
+    <style>
+      body {
+        margin: 0;
+        padding: 0;
+      }
+      div {
+        display: block;
+        box-sizing: border-box;
+        /* default value: content-box */
+        background-color: orange;
+        border: 10px solid red;
+        padding: 10px;
+        /* margin: 10px; */
+        /* width: 100px;
+        height: 100px; */
+      }
+      /* display: block - luon chiem het khogn gian the cha, luon bat dau bang dong moi */
+
+      span {
+        /* display: inline; */
+        background-color: green;
+        padding: 10px;
+        margin-right: 20px;
+        margin-bottom: 20px;
+        border: 4px dotted red;
+      }
+      /* display: inline
+      - chỉ cần không gian đủ hiển thị nội dung.  
+      - không bắt đầu bằng dòng mới
+      - padding, margin không hoạt động theo chiều dọc đúng cách.
+      - không thể thiết lập được chiều cao, chiều rộng
+      */
+
+      .highlight {
+        background-color: violet;
+        padding: 6px;
+        display: inline-block;
+      }
+
+      a {
+        width: 100px;
+        height: 100px;
+        border: 2px solid blue;
+        display: inline-block;
+      }
+      button {
+        width: 100px;
+        height: 40px;
+      }
+      img {
+        width: 300px;
+      }
+    </style>
+    <!-- inline: strong, b, i, em, span, a, img -->
+    <!-- block: tất cả các thẻ còn lại. -->
+  </head>
+  <body>
+    <div>Lorem</div>
+    <span>Lorem</span>
+    <span>Lorem</span>
+    <span>Lorem</span>
+    <span>Lorem</span>
+    <span>Lorem</span>
+    <span>Lorem</span>
+    <p>
+      Xin chao moi nguoi, minh la
+      <strong class="highlight">giao vien</strong> day
+      <strong>lap trinh</strong>
+    </p>
+
+    <a href="https://google.com">Google</a>
+    <a href="https://google.com">Google</a>
+    <a href="https://google.com">Google</a>
+    <a href="https://google.com">Google</a>
+    <a href="https://google.com">Google</a>
+    <img src="https://picsum.photos/100/100" alt="" />
+
+    <button>Submit</button>
+    <button>Submit</button>
+    <button>Submit</button>
+    <button>Submit</button>
+  </body>
+</html>
