@@ -1,0 +1,38 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <header>Header</header>
+    <main>
+      <section>1</section>
+      <!-- hanlde -->
+      <section>
+        <h2>Noi dung the h2</h2>
+        <button onclick="updateContent()">
+          Click count: <span id="count">0</span>
+        </button>
+        <!-- * Manupulation DOM ->  HTML -->
+      </section>
+      <section>3</section>
+    </main>
+    <footer>footer</footer>
+    <!-- Cach 1: external JS -->
+    <script src="./ex01.js">
+      console.log("Code o day se khong bao gio dk thuc hien!");
+    </script>
+    <script>
+      // Cach 2: viet trong cap the script (JS Internal)
+      console.log("alo");
+      const countElement = document.getElementById("count");
+      // const h2Element = document.get
+      function updateContent() {
+        // console.log(Number(countElement.innerText));
+        countElement.innerText = Number(countElement.innerText) + 1;
+      }
+    </script>
+  </body>
+</html>
